@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrewFinder</title>
+</head>
+
+<body>
+    <h1><%= locals.name %></h1>
+    <% if (address_1 === null){ %>
+        <p>Address not found, try searching again</p>
+    <% } else { %>
+        <p><%= locals.address_1 %></p>
+        <% } %>
+    <form action="/" method="POST">
+        <input type="text" name="city" placeholder="City">
+        <input type="text" name="state" placeholder="State">
+        <input type="submit" value="Look Up">
+    </form>
+</body>
+</html>
