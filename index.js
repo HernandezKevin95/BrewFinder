@@ -9,10 +9,7 @@ const API_URL = "https://api.openbrewerydb.org/v1/breweries?";
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 app.get("/", (req, res) => {
-    res.render("index.ejs",{
-        name: "Let's Find a Local Brew",
-        address_1: ""
-    })
+    res.render("index.ejs")
 });
 
 app.post("/",async (req, res) => {

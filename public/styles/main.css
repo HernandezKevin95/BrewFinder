@@ -1,0 +1,20 @@
+.logo {
+    min-height: 55vh;
+}
+
+body {
+    background-image: url("../images/background-beer.gif");
+    background-size: 100% 200%;
+}
+
+.card {
+    background-color: #F2AC29;
+    
+}
+.card-title {
+    color: ##8C5007;
+}
+
+.card-subtitle {
+    color: ##8C5007
+}
